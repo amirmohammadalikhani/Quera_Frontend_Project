@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import queraIcon from "../../public/logo-quera-header.svg";
+import queraIcon from "../../public/icon/logo-quera-header.svg";
 
 export default function Header() {
 	return (
@@ -76,12 +76,16 @@ export default function Header() {
 				</div>
 			</div>
 			<div className="flex justify-center items-center">
-				<button className="bg-blue-600 rounded border-[1px] border-blue-600 text-white text-xs p-[5px] mr-2 hover:bg-blue-600">
-					Sign In
-				</button>
-				<button className="bg-white text-blue-600 rounded border-blue-600 border-[1px] text-xs p-[5px] mr-2 hover:bg-cyan-50">
-					Sign Up
-				</button>
+				<Link href="/user/login">
+					<button className="bg-blue-600 rounded border-[1px] border-blue-600 text-white text-xs p-[5px] mr-2 hover:bg-blue-700">
+						Sign In
+					</button>
+				</Link>
+				<Link href="/user/register">
+					<button className="bg-white text-blue-600 rounded border-blue-600 border-[1px] text-xs p-[5px] mr-2 hover:bg-cyan-50">
+						Sign Up
+					</button>
+				</Link>
 				<p className="text-xs px-[5px] py-2 text-[rgba(0,0,0,0.7)] hover:text-black">
 					Enter the companies section
 				</p>
