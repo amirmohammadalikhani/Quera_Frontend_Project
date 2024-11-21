@@ -12,7 +12,7 @@ export default function EmployerLogin() {
 	];
 
 	return (
-		<main className="bg-blue-100 pt-14 min-h-screen">
+		<main className="bg-blue-100 pt-14 h-full pb-48">
 			<Login {...EmployerLoginProps[0]} />
 		</main>
 	);
